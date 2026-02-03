@@ -1,0 +1,4 @@
+// Production configuration
+APP_ENV = Production
+GOOGLE_SERVICE_INFO_PLIST = GoogleService-Info-Prod.plist
+OTHER_SWIFT_FLAGS = -DPRODUCTION

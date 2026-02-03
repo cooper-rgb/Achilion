@@ -1,0 +1,4 @@
+// Development configuration
+APP_ENV = Development
+GOOGLE_SERVICE_INFO_PLIST = GoogleService-Info-Dev.plist
+OTHER_SWIFT_FLAGS = -DDEVELOPMENT

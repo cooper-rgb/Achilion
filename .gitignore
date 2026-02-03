@@ -1,0 +1,27 @@
+# Xcode
+.DS_Store
+DerivedData/
+build/
+*.xcworkspace
+xcuserdata/
+*.xcuserstate
+
+# CocoaPods / Carthage / SPM build artifacts
+Pods/
+Carthage/
+.package/
+.build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+# Secrets and google plist(s)
+# Keep production plist out of repo
+Config/GoogleService-Info-Prod.plist
+Config/GoogleService-Info-*.plist.backup
+
+# macOS
+*.log
+
+# Local env files
+.env
