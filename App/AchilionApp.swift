@@ -8,11 +8,13 @@
 import SwiftUI
 import SwiftData
 import FirebaseCore
+import Foundation
 
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-    FirebaseApp.configure()
+    // Use FirebaseManager to ensure Firebase is configured exactly once and to centralize setup.
+    FirebaseManager.shared.configureIfNeeded()
 
     return true
   }
@@ -20,9 +22,11 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 
 
-
 @main
 struct AchilionApp: App {
+    // Attach the existing AppDelegate so its lifecycle methods run (Firebase is configured there)
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
