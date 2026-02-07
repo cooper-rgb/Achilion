@@ -20,6 +20,10 @@ fastlane/Preview.html
 Config/GoogleService-Info-Prod.plist
 Config/GoogleService-Info-*.plist.backup
 
+# Ignore any GoogleService plist files by default, but keep the dev placeholder tracked
+Config/GoogleService-Info-*.plist
+!Config/GoogleService-Info-Dev.plist
+
 # macOS
 *.log
 
