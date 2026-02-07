@@ -1,3 +1,5 @@
+If `App/Achilion/Info.plist` did not update automatically, paste the following content into that file (overwrite it) to add HealthKit usage strings and background fetch:
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -15,3 +17,8 @@
 	</array>
 </dict>
 </plist>
+
+After updating, run:
+
+plutil -p App/Achilion/Info.plist | egrep 'NSHealthShareUsageDescription|NSHealthUpdateUsageDescription' || echo 'Health usage keys missing'
+
