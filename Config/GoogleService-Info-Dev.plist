@@ -2,29 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CFBundleExecutable</key>
-	<string></string>
-	<key>PLIST_VERSION</key>
-	<string>1</string>
-	<key>CFBundleIdentifier</key>
-	<string></string>
+	<!-- Harmless placeholder GoogleService-Info for development.
+	     Replace this file locally with the real Firebase iOS plist for your dev project.
+	     Do NOT commit real API keys or production plists. For CI, provide the real plist
+	     via the GOOGLE_SERVICE_INFO_DEV_BASE64 secret in GitHub Actions. -->
+
+	<key>PROJECT_ID</key>
+	<string>achilion-dev-placeholder</string>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:000000000000:ios:0000000000000000</string>
+	<key>GCM_SENDER_ID</key>
+	<string>000000000000</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD-PLACEHOLDER-000000000000000000</string>
+	<key>CLIENT_ID</key>
+	<string>000000000000-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com</string>
 	<key>BUNDLE_ID</key>
 	<string>Achilion.Achilion</string>
-	<key>PROJECT_ID</key>
-	<string>achilion</string>
-	<key>STORAGE_BUCKET</key>
-	<string>achilion.firebasestorage.app</string>
-	<key>IS_ADS_ENABLED</key>
-	<false/>
-	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
-	<key>IS_APPINVITE_ENABLED</key>
-	<true/>
-	<key>IS_GCM_ENABLED</key>
-	<true/>
-	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
-	<key>GOOGLE_APP_ID</key>
-	<string>1:474879086601:ios:26cad7afa02fcdb11028d8</string>
 </dict>
 </plist>
